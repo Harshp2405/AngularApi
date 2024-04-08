@@ -1,0 +1,22 @@
+<p>all-student works!</p>
+
+<a [routerLink]="['Add']" class="btn btn-block btn-danger btn-outline-light">Add Student</a>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="card col-3" *ngFor="let i of StudentA">
+            <img src="{{i.avatar}}"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{i.name}}</h5>
+                <h6 class="card-subtitle mb-2 text-muted ">{{i.ContactNumber}}</h6>
+                <p class="card-text">{{i.EmailId}}</p>
+                <p class="card-text">{{i.Companyname}}</p>
+                <button type="button" (click)="ngOnInit()" ngClass="btn btn-primary text-white" routerLink="{{i.id}}">more details</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+

@@ -1,0 +1,32 @@
+<p>edit-page works!</p>
+<form (ngSubmit)="savedata(myform.value)" #myform="ngForm">
+    id
+    <input type="text" [value]="data.id" name="id" disabled="true" [(ngModel)]="data.id">
+    name
+    <input type="text" name="name" [(ngModel)]="data.name">
+
+
+    Avatar
+    <input type="text" name="avatar" [(ngModel)]="data.avatar">
+
+
+    Mail
+    <input type="text" name="EmailId" [(ngModel)]="data.EmailId">
+
+    Number
+    <input type="text" name="ContactNumber" [(ngModel)]="data.ContactNumber">
+
+
+    City
+    <input type="text" name="City" [(ngModel)]="data.City">
+
+
+    Companyname
+    <input type="text" name="Companyname" [(ngModel)]="data.Companyname">
+
+
+    <button type="submit">
+        Edit
+    </button>
+
+</form>

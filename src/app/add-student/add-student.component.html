@@ -1,0 +1,32 @@
+<p>add-student works!</p>
+<form #myform="ngForm" (ngSubmit)="savedata(myform.value)"> 
+    <ul>
+        <li>id</li>
+        <li><input type="text" name="id" [(ngModel)]="data.id"><br></li>
+        <li>name</li>
+        <li><input type="text" name="name" [(ngModel)]="data.name"><br></li>
+        <li>Avatar</li>
+        <li><input type="text" name="avatar" [(ngModel)]="data.avatar"><br></li>
+        <li>Mail</li>
+        <li><input type="text" name="EmailId" [(ngModel)]="data.EmailId"><br></li>
+        <li>Number</li>
+        <li><input type="text" name="ContactNumber" [(ngModel)]="data.ContactNumber"><br></li>
+        <li>City</li>
+        <li><input type="text" name="City" [(ngModel)]="data.City"><br></li>
+        <li>Companyname</li>
+        <li><input type="text" name="Companyname" [(ngModel)]="data.Companyname"><br></li>
+    </ul>             
+
+    <button type="submit" class="btn btn-outline-success">
+        Add
+    </button>
+
+</form>
+<!-- 
+name
+avatar
+EmailId
+ContactNumber
+City
+Companyname
+-->

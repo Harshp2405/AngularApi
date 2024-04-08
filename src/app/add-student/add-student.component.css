@@ -1,0 +1,8 @@
+ul , li{
+    list-style: none;
+}
+input{
+    border: 0.2rem ;
+    border-color: cadetblue;
+    border-style: double;
+}
