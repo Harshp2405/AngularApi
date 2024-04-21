@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AllStudentComponent } from './all-student/all-student.component';
@@ -22,7 +21,9 @@ import { EditPageComponent } from './edit-page/edit-page.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    BrowserModule,
+    HttpClientModule,
   ],
   providers: [
     provideClientHydration()
