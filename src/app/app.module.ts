@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { StudentByIdComponent } from './student-by-id/student-by-id.component';
 import { AddStudentComponent } from './add-student/add-student.component';
 import { EditPageComponent } from './edit-page/edit-page.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { EditPageComponent } from './edit-page/edit-page.component';
     StudentByIdComponent,
     AddStudentComponent,
     EditPageComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
